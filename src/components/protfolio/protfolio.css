@@ -1,0 +1,39 @@
+.protContainer{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 2.5rem;
+}
+.protItem{
+    border: 1px solid;
+    padding: 1.3rem;
+    background: var(--color-bg-variant);
+    border: 1px solid transparent;
+    transition: var(--transition);
+    border-radius: 2rem;
+}
+.protItem:hover{
+    border-color: var(--color-primary-variant);
+    background:transparent;
+}
+.protImg{
+    border-radius: 2rem;
+    overflow: hidden;
+}
+.protItem h3{
+    margin: 1.2rem 0 2rem;
+}
+.protItem a{
+    margin: auto 3rem;
+}
+@media screen and (max-width:1024px){
+   .protContainer{
+     grid-template-columns: 1fr 1fr;
+     gap: 1.2rem;
+   }
+}
+@media screen and (max-width:600px){
+    .protContainer{
+        grid-template-columns: 1fr;
+        gap: 1rem;
+   }
+}

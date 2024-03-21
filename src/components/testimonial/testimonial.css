@@ -1,0 +1,39 @@
+.testContainer {
+    width: 40%;
+    padding-bottom: 4rem;
+}
+.testImg{
+    width: 4rem;
+    aspect-ratio: 1/1;
+    overflow: hidden;
+    border-radius: 50%;
+    margin: 0 auto 1rem;
+    border: 0.4rem solid var(--color-primary-variant);
+}
+.test{
+    background: var(--color-bg-variant);
+    border-radius: 2rem;
+    text-align: center;
+    padding: 2rem;
+    user-select: none;
+}
+.avtRev{
+    color:var(--color-light) ;
+    font-weight: 300;
+    width: 80%;
+    display: block;
+    margin :0.8rem auto 0;
+}
+@media screen and (max-width:1024px){
+   .container .testContainer{
+    width: 60%;
+   }
+}
+@media screen and (max-width:600px){
+    .container .testContainer{
+        width: var(--container-width-sm);
+       }
+    .avtRev{
+        width: var(--container-width-sm);
+    }
+}
